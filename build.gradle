@@ -1,7 +1,18 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "com.github.spotbugs.snom:spotbugs-gradle-plugin:5.0.9"
+  }
+}
+
+apply plugin: "com.github.spotbugs"
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
-apply plugin: "com.github.spotbugs"
 
 group 'com.bettercloud'
 archivesBaseName = 'vault-java-driver'
