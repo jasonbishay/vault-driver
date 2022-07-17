@@ -5,7 +5,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "com.github.spotbugs.snom:spotbugs-gradle-plugin:4.5.0"
+    classpath 'gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.6'
   }
 }
 
@@ -14,7 +14,6 @@ apply plugin: "com.github.spotbugs"
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
-apply plugin: "com.github.spotbugs"
 
 group 'com.bettercloud'
 archivesBaseName = 'vault-java-driver'
