@@ -11,7 +11,7 @@ buildscript {
 
 apply plugin: "com.github.spotbugs"
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 group 'com.bettercloud'
